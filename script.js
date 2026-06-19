@@ -1,25 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const downloadGlowUpBtn = document.getElementById("downloadGlowUpBtn");
-    const downloadProfileBtn = document.getElementById("downloadProfileBtn");
+    const btnGlowUp = document.getElementById("btnGlowUp");
+    const btnProfile = document.getElementById("btnProfile");
+    const step1 = document.getElementById("step1");
+    const step2 = document.getElementById("step2");
 
-    // عند الضغط على "تحميل قلو اب"
-    downloadGlowUpBtn.addEventListener("click", () => {
-        // إخفاء الزر الأول
-        downloadGlowUpBtn.classList.add("hidden");
-        // إظهار زر تحميل البروفايل
-        downloadProfileBtn.classList.remove("hidden");
+    // التنفيذ التتابعي عند الضغط على زر تحميل قلو اب الأول
+    btnGlowUp.addEventListener("click", () => {
+        // حجب الخطوة الأولى وإظهار الخطوة الثانية المخصصة للبروفايل مباشرة
+        step1.classList.add("hidden");
+        step2.classList.remove("hidden");
     });
 
-    // عند الضغط على "تحميل بروفايل"
-    downloadProfileBtn.addEventListener("click", () => {
-        // إنشاء رابط وهمي لتحميل ملف الـ Profile
-        const link = document.createElement("a");
-        link.href = "files/profile.mobileconfig"; // مسار الملف
-        link.download = "GlowUp_Blocker.mobileconfig"; // اسم الملف عند التحميل
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+    // سحب وتحميل ملف التكوين الفعلي من السيرفر عند ضغط الزر الثاني
+    btnProfile.addEventListener("click", () => {
+        const downloadLink = document.createElement("a");
+        downloadLink.href = "files/profile.mobileconfig";
+        downloadLink.download = "GlowUp_Blocker.mobileconfig";
         
-        alert("بدأ تحميل البروفايل! يرجى اتباع التعليمات بالأسفل لتثبيته في الإعدادات.");
+        // إدخال الرابط في الخلفية وتنفيذ الضغط التلقائي الآمن ثم حذفه
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
     });
 });
