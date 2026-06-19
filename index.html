@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة تحميل الأدوات والبروفايلات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>مركز التحكم والتحميل</h1>
+        <p>حمل أدواتك والبروفايلات الأمنية لحجب المواقع بسهولة.</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="download-section">
+            <h2>الخطوة 1: تحميل مشروع Flask</h2>
+            <button onclick="showStep2()" class="btn-main">تحميل فلاسك</button>
+        </section>
+
+        <section id="step2" class="download-section hidden">
+            <h2>الخطوة 2: تحميل البروفايل الأمني</h2>
+            <button onclick="showStep3()" class="btn-main btn-secondary">تحميل بروفايل</button>
+        </section>
+
+        <section id="step3" class="download-section hidden">
+            <h2>الخطوة 3: تحميل بروفايل الحجب والـ VPN</h2>
+            <p class="warning-text">هذا البروفايل سيقوم بحجب: YouTube, Netflix, TikTok</p>
+            <a href="downloads/block_profile.mobileconfig" download class="btn-main btn-danger">تحميل ملف الحجب (VPN)</a>
+        </section>
+
+        <hr>
+
+        <section class="instructions">
+            <h2>شرح طريقة التثبيت والحذف</h2>
+            
+            <div class="info-box">
+                <h3>طريقة التحميل والتثبيت:</h3>
+                <ol>
+                    <li>اضغط على أزرار التحميل بالترتيب الموضح أعلاه.</li>
+                    <li>عند تحميل ملف <strong>Flask</strong>، قم بفك الضغط عنه وتشغيله ببيئتك المحلية.</li>
+                    <li>عند تحميل <strong>بروفايل الحجب (.mobileconfig)</strong> على جهازك (iOS/macOS):
+                        <ul>
+                            <li>اذهب إلى <strong>الإعدادات (Settings)</strong>.</li>
+                            <li>ستظهر لك خانة "تم تنزيل ملف التعريف" (Profile Downloaded) في الأعلى، اضغط عليها.</li>
+                            <li>اضغط على <strong>تثبيت (Install)</strong> وأدخل رمز قفل الشاشة الخاص بك.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="info-box delete-box">
+                <h3>طريقة الحذف والإزالة:</h3>
+                <ol>
+                    <li>لإزالة حجب المواقع واستعادة الوضع الطبيعي:</li>
+                    <li>اذهب إلى <strong>الإعدادات (Settings)</strong> -> <strong>عام (General)</strong> -> <strong>إدارة VPN والأجهزة (VPN & Device Management)</strong>.</li>
+                    <li>ابحث عن ملف التعريف الخاص بالحجب (Block Profile).</li>
+                    <li>اضغط عليه ثم اختر <strong>إزالة ملف التعريف (Remove Profile)</strong>.</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // دالة لإظهار الخطوة الثانية بعد الضغط على تحميل فلاسك
+        function showStep2() {
+            // هنا نقوم بتحميل ملف فلاسك تلقائياً عند الضغط
+            window.location.href = 'downloads/flask_project.zip';
+            
+            // إظهار القسم التالي
+            document.getElementById('step2').classList.remove('hidden');
+        }
+
+        // دالة لإظهار الخطوة الثالثة بعد الضغط على تحميل بروفايل
+        function showStep3() {
+            document.getElementById('step3').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
