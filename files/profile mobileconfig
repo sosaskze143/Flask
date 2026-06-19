@@ -5,42 +5,59 @@
     <key>PayloadContent</key>
     <array>
         <dict>
-            <key>AutoFilterEnabled</key>
-            <false/>
-            <key>BlacklistedURLs</key>
-            <array>
-                <string>https://www.youtube.com</string>
-                <string>https://m.youtube.com</string>
-                <string>https://www.netflix.com</string>
-                <string>https://www.tiktok.com</string>
-                <string>https://v16.tiktokcdn.com</string>
-            </array>
-            <key>FilterType</key>
-            <string>BuiltIn</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>DNSServerAddresses</key>
+                <array>
+                    <string>0.0.0.0</string>
+                    <string>127.0.0.1</string>
+                </array>
+                <key>SupplementalMatchDomains</key>
+                <array>
+                    <string>youtube.com</string>
+                    <string>www.youtube.com</string>
+                    <string>m.youtube.com</string>
+                    <string>youtu.be</string>
+                    <string>youtube-ui.l.google.com</string>
+                    <string>ytimg.com</string>
+                    <string>netflix.com</string>
+                    <string>www.netflix.com</string>
+                    <string>netflix.net</string>
+                    <string>nflximg.net</string>
+                    <string>nflxvideo.net</string>
+                    <string>tiktok.com</string>
+                    <string>www.tiktok.com</string>
+                    <string>m.tiktok.com</string>
+                    <string>tiktokcdn.com</string>
+                    <string>v16.tiktokcdn.com</string>
+                </array>
+            </dict>
+            <key>PayloadDescription</key>
+            <string>إعدادات حظر المواقع والمشتتات الرقمية لزيادة التركيز والانتاجية</string>
             <key>PayloadDisplayName</key>
-            <string>Web Content Filter</string>
+            <string>Glow Up DNS Filter</string>
             <key>PayloadIdentifier</key>
-            <string>com.apple.webcontent-filter.glowup</string>
+            <string>com.glowup.dns.settings</string>
             <key>PayloadType</key>
-            <string>com.apple.webcontent-filter</string>
+            <string>com.apple.dnsSettings.managed</string>
             <key>PayloadUUID</key>
-            <string>A1B2C3D4-E5F6-4A5B-8C9D-E0F1A2B3C4D5</string>
+            <string>8A4B6C3D-E2F1-436A-9148-B5D2D68C811F</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
         </dict>
     </array>
-    <key>PayloadDisplayName</key>
-    <string>Glow Up Blocker (VPN/Filter)</string>
     <key>PayloadDescription</key>
-    <string>يقوم هذا البروفايل بحظر مواقع YouTube و Netflix و TikTok لزيادة الإنتاجية.</string>
+    <string>ملف تكوين Glow Up لحظر المنصات المشتتة (YouTube, Netflix, TikTok)</string>
+    <key>PayloadDisplayName</key>
+    <string>Glow Up Blocker</string>
     <key>PayloadIdentifier</key>
-    <string>com.glowup.blocker</string>
+    <string>com.glowup.blocker.profile</string>
     <key>PayloadOrganization</key>
     <string>Glow Up by SD</string>
     <key>PayloadType</key>
     <string>Configuration</string>
     <key>PayloadUUID</key>
-    <string>12345678-90AB-CDEF-1234-567890ABCDEF</string>
+    <string>7C3A2B1D-4E5F-6A7B-8C9D-0E1F2A3B4C5D</string>
     <key>PayloadVersion</key>
     <integer>1</integer>
 </dict>
