@@ -3,48 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع Glow Up</title>
+    <title>Glow Up - تخلص من المشتتات الرقمية</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="logo">🌟 Glow Up</div>
+            <h1>مرحباً بك في رحلة التغيير</h1>
+            <p>منصة بسيطة لمساعدتك على التركيز، حجب المشتتات، ورفع إنتاجيتك اليومية.</p>
+        </header>
 
-    <header>
-        <h1>🌟 Glow Up</h1>
-        <p>ابدأ رحلة التغيير وتخلص من المشتتات الرقمية.</p>
-    </header>
+        <main>
+            <div class="card action-card">
+                <div id="step1">
+                    <button id="btnGlowUp" class="btn btn-primary">تحميل قلو اب</button>
+                </div>
+                <div id="step2" class="hidden">
+                    <p class="step-notice">🎉 خطوة ممتازة! الآن قم بتنزيل ملف التكوين للحجب الفوري:</p>
+                    <button id="btnProfile" class="btn btn-success">تحميل بروفايل (VPN/DNS)</button>
+                </div>
+            </div>
 
-    <main>
-        <div class="action-section">
-            <button id="downloadGlowUpBtn" class="btn primary-btn">تحميل قلو اب</button>
-            <button id="downloadProfileBtn" class="btn secondary-btn hidden">تحميل بروفايل (VPN)</button>
-        </div>
+            <div class="card instructions-card">
+                <div class="section-title">
+                    <h2>⚙️ طريقة التحميل والتفعيل على الجهاز (iOS)</h2>
+                </div>
+                <ol class="steps-list">
+                    <li>اضغط على زر <strong class="highlight">"تحميل قلو اب"</strong> ليظهر لك خيار البروفايل التالي.</li>
+                    <li>اضغط على زر <strong class="highlight">"تحميل بروفايل"</strong>، وستظهر لك رسالة فورية من النظام تطلب السماح بتنزيل ملف تعريف، اضغط على <strong>السماح (Allow)</strong>.</li>
+                    <li>بعد اكتمال التنزيل بنجاح، أغلق المتصفح وافتح تطبيق <strong>الإعدادات (Settings)</strong> في جهازك.</li>
+                    <li>ستلاحظ ظهور خيار جديد في أعلى القائمة مباشرة باسم <strong>"تم تنزيل ملف التعريف" (Profile Downloaded)</strong>، قم بالضغط عليه.</li>
+                    <li>اضغط على <strong>تثبيت (Install)</strong> في الزاوية العلوية اليسرى/اليمنى، ثم أدخل رمز قفل الشاشة الخاص بجهازك لتأكيد الهوية والتفعيل.</li>
+                    <li>بمجرد اكتمال التثبيت، سيتم تفعيل الحظر التلقائي بشكل كامل على المتصفحات والتطبيقات للمواقع المستهدفة.</li>
+                </ol>
 
-        <div class="instructions-section">
-            <h2>📖 طريقة التحميل والتثبيت (iOS/macOS)</h2>
-            <ol>
-                <li>اضغط على زر <strong>تحميل قلو اب</strong> ثم <strong>تحميل بروفايل</strong>.</li>
-                <li>ستظهر لك رسالة تطلب السماح بتنزيل ملف تعريف، اضغط على <strong>السماح (Allow)</strong>.</li>
-                <li>افتح تطبيق <strong>الإعدادات (Settings)</strong> في جهازك.</li>
-                <li>ستجد خياراً جديداً في الأعلى باسم <strong>تم تنزيل ملف التعريف (Profile Downloaded)</strong>، اضغط عليه.</li>
-                <li>اضغط على <strong>تثبيت (Install)</strong> في الزاوية العلوية، وأدخل رمز المرور الخاص بك.</li>
-                <li>بمجرد التثبيت، سيتم حظر YouTube و Netflix و TikTok تلقائياً.</li>
-            </ol>
+                <div class="section-title">
+                    <h2>🗑️ طريقة الحذف والإلغاء تماماً في أي وقت</h2>
+                </div>
+                <ol class="steps-list delete-list">
+                    <li>افتح تطبيق <strong>الإعدادات (Settings)</strong> على جهازك.</li>
+                    <li>انتقل لأسفل قليلاً واضغط على قسم <strong>عام (General)</strong>.</li>
+                    <li>انزل إلى أسفل القائمة واضغط على خيار <strong>إدارة VPN والجهاز (VPN & Device Management)</strong>.</li>
+                    <li>تحت قسم "ملف تعريف التكوين"، ستجد الملف المثبت باسم <strong>Glow Up Blocker</strong>، اضغط عليه.</li>
+                    <li>اضغط على الزر الأحمر <strong>إزالة ملف التعريف (Remove Profile)</strong>، ثم أدخل رمز قفل الشاشة لتأكيد الحذف النهائي وإعادة تشغيل المواقع فوراً.</li>
+                </ol>
+            </div>
+        </main>
 
-            <h2>🗑️ طريقة الحذف والإلغاء</h2>
-            <ol>
-                <li>افتح تطبيق <strong>الإعدادات (Settings)</strong>.</li>
-                <li>اذهب إلى <strong>عام (General)</strong>.</li>
-                <li>انزل للأسفل واختر <strong>إدارة VPN والجهاز (VPN & Device Management)</strong>.</li>
-                <li>اختر ملف تعريف <strong>Glow Up Block</strong> من القائمة.</li>
-                <li>اضغط على <strong>إزالة ملف التعريف (Remove Profile)</strong> وأدخل رمز المرور للتأكيد.</li>
-            </ol>
-        </div>
-    </main>
-
-    <footer>
-        <p>تم التصميم بواسطة SD &copy; 2026</p>
-    </footer>
-
+        <footer>
+            <p>جميع الحقوق محفوظة لـ SD &copy; 2026</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
