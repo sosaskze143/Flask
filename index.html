@@ -3,81 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة تحميل الأدوات والبروفايلات</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>موقع Glow Up</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>مركز التحكم والتحميل</h1>
-        <p>حمل أدواتك والبروفايلات الأمنية لحجب المواقع بسهولة.</p>
+        <h1>🌟 Glow Up</h1>
+        <p>ابدأ رحلة التغيير وتخلص من المشتتات الرقمية.</p>
     </header>
 
-    <main class="container">
-        
-        <section class="download-section">
-            <h2>الخطوة 1: تحميل مشروع Flask</h2>
-            <button onclick="showStep2()" class="btn-main">تحميل فلاسك</button>
-        </section>
+    <main>
+        <div class="action-section">
+            <button id="downloadGlowUpBtn" class="btn primary-btn">تحميل قلو اب</button>
+            <button id="downloadProfileBtn" class="btn secondary-btn hidden">تحميل بروفايل (VPN)</button>
+        </div>
 
-        <section id="step2" class="download-section hidden">
-            <h2>الخطوة 2: تحميل البروفايل الأمني</h2>
-            <button onclick="showStep3()" class="btn-main btn-secondary">تحميل بروفايل</button>
-        </section>
+        <div class="instructions-section">
+            <h2>📖 طريقة التحميل والتثبيت (iOS/macOS)</h2>
+            <ol>
+                <li>اضغط على زر <strong>تحميل قلو اب</strong> ثم <strong>تحميل بروفايل</strong>.</li>
+                <li>ستظهر لك رسالة تطلب السماح بتنزيل ملف تعريف، اضغط على <strong>السماح (Allow)</strong>.</li>
+                <li>افتح تطبيق <strong>الإعدادات (Settings)</strong> في جهازك.</li>
+                <li>ستجد خياراً جديداً في الأعلى باسم <strong>تم تنزيل ملف التعريف (Profile Downloaded)</strong>، اضغط عليه.</li>
+                <li>اضغط على <strong>تثبيت (Install)</strong> في الزاوية العلوية، وأدخل رمز المرور الخاص بك.</li>
+                <li>بمجرد التثبيت، سيتم حظر YouTube و Netflix و TikTok تلقائياً.</li>
+            </ol>
 
-        <section id="step3" class="download-section hidden">
-            <h2>الخطوة 3: تحميل بروفايل الحجب والـ VPN</h2>
-            <p class="warning-text">هذا البروفايل سيقوم بحجب: YouTube, Netflix, TikTok</p>
-            <a href="downloads/block_profile.mobileconfig" download class="btn-main btn-danger">تحميل ملف الحجب (VPN)</a>
-        </section>
-
-        <hr>
-
-        <section class="instructions">
-            <h2>شرح طريقة التثبيت والحذف</h2>
-            
-            <div class="info-box">
-                <h3>طريقة التحميل والتثبيت:</h3>
-                <ol>
-                    <li>اضغط على أزرار التحميل بالترتيب الموضح أعلاه.</li>
-                    <li>عند تحميل ملف <strong>Flask</strong>، قم بفك الضغط عنه وتشغيله ببيئتك المحلية.</li>
-                    <li>عند تحميل <strong>بروفايل الحجب (.mobileconfig)</strong> على جهازك (iOS/macOS):
-                        <ul>
-                            <li>اذهب إلى <strong>الإعدادات (Settings)</strong>.</li>
-                            <li>ستظهر لك خانة "تم تنزيل ملف التعريف" (Profile Downloaded) في الأعلى، اضغط عليها.</li>
-                            <li>اضغط على <strong>تثبيت (Install)</strong> وأدخل رمز قفل الشاشة الخاص بك.</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="info-box delete-box">
-                <h3>طريقة الحذف والإزالة:</h3>
-                <ol>
-                    <li>لإزالة حجب المواقع واستعادة الوضع الطبيعي:</li>
-                    <li>اذهب إلى <strong>الإعدادات (Settings)</strong> -> <strong>عام (General)</strong> -> <strong>إدارة VPN والأجهزة (VPN & Device Management)</strong>.</li>
-                    <li>ابحث عن ملف التعريف الخاص بالحجب (Block Profile).</li>
-                    <li>اضغط عليه ثم اختر <strong>إزالة ملف التعريف (Remove Profile)</strong>.</li>
-                </ol>
-            </div>
-        </section>
-
+            <h2>🗑️ طريقة الحذف والإلغاء</h2>
+            <ol>
+                <li>افتح تطبيق <strong>الإعدادات (Settings)</strong>.</li>
+                <li>اذهب إلى <strong>عام (General)</strong>.</li>
+                <li>انزل للأسفل واختر <strong>إدارة VPN والجهاز (VPN & Device Management)</strong>.</li>
+                <li>اختر ملف تعريف <strong>Glow Up Block</strong> من القائمة.</li>
+                <li>اضغط على <strong>إزالة ملف التعريف (Remove Profile)</strong> وأدخل رمز المرور للتأكيد.</li>
+            </ol>
+        </div>
     </main>
 
-    <script>
-        // دالة لإظهار الخطوة الثانية بعد الضغط على تحميل فلاسك
-        function showStep2() {
-            // هنا نقوم بتحميل ملف فلاسك تلقائياً عند الضغط
-            window.location.href = 'downloads/flask_project.zip';
-            
-            // إظهار القسم التالي
-            document.getElementById('step2').classList.remove('hidden');
-        }
+    <footer>
+        <p>تم التصميم بواسطة SD &copy; 2026</p>
+    </footer>
 
-        // دالة لإظهار الخطوة الثالثة بعد الضغط على تحميل بروفايل
-        function showStep3() {
-            document.getElementById('step3').classList.remove('hidden');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
