@@ -1,1 +1,47 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>AutoFilterEnabled</key>
+            <false/>
+            <key>BlacklistedURLs</key>
+            <array>
+                <string>https://www.youtube.com</string>
+                <string>https://m.youtube.com</string>
+                <string>https://www.netflix.com</string>
+                <string>https://www.tiktok.com</string>
+                <string>https://v16.tiktokcdn.com</string>
+            </array>
+            <key>FilterType</key>
+            <string>BuiltIn</string>
+            <key>PayloadDisplayName</key>
+            <string>Web Content Filter</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.webcontent-filter.glowup</string>
+            <key>PayloadType</key>
+            <string>com.apple.webcontent-filter</string>
+            <key>PayloadUUID</key>
+            <string>A1B2C3D4-E5F6-4A5B-8C9D-E0F1A2B3C4D5</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>Glow Up Blocker (VPN/Filter)</string>
+    <key>PayloadDescription</key>
+    <string>يقوم هذا البروفايل بحظر مواقع YouTube و Netflix و TikTok لزيادة الإنتاجية.</string>
+    <key>PayloadIdentifier</key>
+    <string>com.glowup.blocker</string>
+    <key>PayloadOrganization</key>
+    <string>Glow Up by SD</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>12345678-90AB-CDEF-1234-567890ABCDEF</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
